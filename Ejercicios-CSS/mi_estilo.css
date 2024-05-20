@@ -1,0 +1,33 @@
+body {
+            text-align: center;
+            font-family: 'Gugi',cursive;
+            background: linear-gradient(to right, #ffcc14, #ff6a00);
+}
+div {
+            border: 2px solid #ff5708;
+            margin: 10px;
+            padding: 5px 30px;
+            border-radius: 15;
+            box-shadow: 10px 10px #ff4500;
+        }
+#principal{
+            width: 50px;
+            float: left;
+            border-radius: 50%;
+}
+div h3{
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            text-shadow: 10px 2px #8d8b8bcb;
+}
+ol.titulo li {
+    list-style-type: upper-roman;
+    font-size: 2em;
+}
+
+ol.subitems li {
+    list-style-type: lower-alpha;
+}
