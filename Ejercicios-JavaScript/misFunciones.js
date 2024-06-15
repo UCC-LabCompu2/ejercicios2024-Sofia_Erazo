@@ -53,3 +53,33 @@ function mostraryocultar(valormo) {
         document.getElementById("divmo").style.display = 'none';
     }
 }
+
+function calcularsum() {
+    var nums1, nums2;
+    nums1 = Number(document.getElementsByName("sum_num1")[0].value);
+    //se escribe [0] porque no es id 
+    nums2 = document.getElementsByName("sum_num2")[0].value;
+    document.getElementsByName("sum_total")[0].value = nums1 + Number(nums2);
+}
+
+function calcularesta() {
+    var numr1, numr2;
+    numr1 = Number(document.getElementsByName("res_num1")[0].value);
+    numr2 = document.getElementsByName("res_num2")[0].value;
+    document.getElementsByName("res_total")[0].value = numr1 - Number(numr2);
+}
+function calcularmult() {
+    var numm1, numm2;
+    numm1 = Number(document.getElementsByName("mul_num1")[0].value);
+    numm2 = document.getElementsByName("mul_num2")[0].value;
+    document.getElementsByName("mul_total")[0].value = numm1 * Number(numm2);
+}
+function calculardiv() {
+    var numd1,numd2;
+    numd1 = Number(document.getElementsByName("div_num1")[0].value);
+    numd2 = document.getElementsByName("div_num2")[0].value;
+    document.getElementsByName("div_total")[0].value = numd1 / Number(numd2);
+}
+
+
+
