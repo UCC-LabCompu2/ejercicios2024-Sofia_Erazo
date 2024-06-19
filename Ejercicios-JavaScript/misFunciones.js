@@ -125,3 +125,19 @@ function cargaresult() {
     un = urlComp.split("#")[2];
     document.getElementById("dist").value = can + " " + un;
 }
+
+function guardarls() {
+    let distancia, unidad;
+    distancia = document.getElementById('distancia').value;
+    unidad = document.getElementsByName('unidades')[0].value;
+    localStorage.setItem("distancials", distancia);
+    localStorage.setItem("unidadesls", unidad);
+    window.open('LSsegundaWeb.html');
+}
+
+function cargarlocalls() {
+    let cant, un;
+    cant = localStorage.getItem("distancials");
+    un = localStorage.getItem("unidadesls");
+    document.getElementById("dist").value = cant + " " + un;
+}
