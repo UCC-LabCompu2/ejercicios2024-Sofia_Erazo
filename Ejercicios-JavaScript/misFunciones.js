@@ -93,4 +93,35 @@ function calculardiv() {
 }
 
 
+function dibujo() {
+    const canvas = document.getElementById("canvasEJ1");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#000";
 
+    //fillRect(x, y, width, height)
+    ctx.fillRect(10, 15, 20, 25);
+
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.fill();
+}
+
+
+function cargarWeb() {
+    var cant, unidad, urlComp;
+
+    cant = document.getElementById("distancia").value;
+    unidad = document.getElementsByName("unidades")[0].value;
+    urlComp = "segundaWeb.html#" + cant + "#" + unidad;
+    window.open(urlComp);
+}
+
+function cargaresult() {
+    var urlComp, can, un;
+    urlComp = window.location.href.split("/")[10];
+    can = urlComp.split("#")[1];
+    un = urlComp.split("#")[2];
+    document.getElementById("dist").value = can + " " + un;
+}
